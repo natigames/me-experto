@@ -6,12 +6,21 @@ namespace experto
 {
     public partial class App : Application
     {
+        public static string DatabaseLocation = string.Empty;
+
         public App()
         {
+            // used to initialize Tabbed pages
             InitializeComponent();
-
-            //MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
+        }
+
+        // used for sqlite
+        public App(string databaseLocation)
+        {
+            InitializeComponent();
+            MainPage = new NavigationPage(new MainPage());
+            DatabaseLocation = databaseLocation;
         }
 
         protected override void OnStart()

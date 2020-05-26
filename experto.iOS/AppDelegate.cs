@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,7 +24,12 @@ namespace experto.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+
+            // Initialize DB & PATH
+            string dbName = "manoexperta_db.sqlite";
+            string folderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),"..", "Library");
+            string fullpath = Path.Combine(folderPath, dbName);
+            LoadApplication(new App(fullpath));
 
             return base.FinishedLaunching(app, options);
         }
