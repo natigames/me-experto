@@ -21,6 +21,7 @@
         <Button x:Name="LoginButton"
                 Text="Login"
                 Margin="0,25,0,0"
+                Style="{StaticResource normalButton}"
                 Clicked="LoginButton_Clicked"/>
 
     </StackLayout>
