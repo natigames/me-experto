@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using SQLite;
 using experto.Model;
 
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms.Xaml;
+
 using Xamarin.Forms;
 
 namespace experto
@@ -25,5 +30,6 @@ namespace experto
                 postListView.ItemsSource = posts;
             }
         }
+
     }
 }
