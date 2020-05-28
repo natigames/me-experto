@@ -34,9 +34,9 @@
 	<string>experto</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>NSLocationAlwaysUsageDescription</key>
+	<key>Location Always Usage Description</key>
 	<string>Necesitamos tu ubicación para los trabajos más cercanos</string>
-	<key>NSLocationWheninUseUsageDescription</key>
-	<string>Necesitamos tu ubicación para los trabajos más cercanos</string>
+	<key>Location When in Use Usage Description</key>
+	<string></string>
 </dict>
 </plist>

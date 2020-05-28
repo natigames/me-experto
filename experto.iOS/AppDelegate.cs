@@ -25,6 +25,9 @@ namespace experto.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            // Initialize Maps
+            Xamarin.FormsMaps.Init();
+
             // Initialize DB & PATH
             string dbName = "manoexperta_db.sqlite";
             string folderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),"..", "Library");
