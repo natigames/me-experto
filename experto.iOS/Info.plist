@@ -36,7 +36,9 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Necesitamos tu ubicación para los trabajos más cercanos</string>
-	<key>NSLocationWheninUseUsageDescription</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesitamos tu ubicación para los trabajos más cercanos</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Necesitamos tu ubicación para los trabajos más cercanos</string>
 </dict>
 </plist>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 
 namespace experto
 {
@@ -9,7 +10,13 @@ namespace experto
     {
         public MapPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
+            Map map = new Map
+            {
+                IsShowingUser = true
+            };
+            Content = map;
+
         }
     }
 }
